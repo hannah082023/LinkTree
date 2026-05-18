@@ -1,0 +1,69 @@
+/* 基本重置與字體設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex; /* Flexbox 彈性排版模式 */
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* 主容器：限制最大寬度，確保在電腦螢幕上不會太寬 */
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* 大頭貼樣式 */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 變成圓形 */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 150%;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 連結容器：使用 Flexbox 讓按鈕垂直排列 */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 按鈕之間的間距 */
+}
+
+/* 按鈕樣式 */
+.link-btn {
+    display: block;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 30px; /* 圓角按鈕 */
+    font-weight: bold;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 輕微陰影 */
+    transition: all 0.3s ease; /* 懸停動畫過渡時間 */
+}
+
+/* 滑鼠懸停時的特效 */
+.link-btn:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px); /* 稍微往上浮動 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
