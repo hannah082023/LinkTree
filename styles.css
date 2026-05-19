@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+
 /* 基本重置與字體設定 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans TC', 'Segoe UI', Tahoma, sans-serif;
 }
 
 body {
-    background-color: #f4f4f9;
+    background-color: #f5e9d3;
     display: flex; /* Flexbox 彈性排版模式 */
     justify-content: center;
     padding: 50px 20px;
@@ -31,12 +33,12 @@ body {
 
 .profile h1 {
     font-size: 150%;
-    color: #333;
+    color: #544339;
     margin-bottom: 5px;
 }
 
 .profile p {
-    color: #666;
+    color: #82756d;
     margin-bottom: 30px;
 }
 
@@ -44,18 +46,22 @@ body {
 .links {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* 按鈕之間的間距 */
+    gap: 20px; /* 按鈕之間的間距 */
+    align-items: center;
 }
 
 /* 按鈕樣式 */
 .link-btn {
     display: block;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #8a6c5f;
+    color: #e0d9cf;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 35px 20px;
+    width: 400px;       /* 250px 寬 */
+    text-align: center;
     border-radius: 30px; /* 圓角按鈕 */
     font-weight: bold;
+    font-size: 115%;
     border: 2px solid transparent;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 輕微陰影 */
     transition: all 0.3s ease; /* 懸停動畫過渡時間 */
@@ -63,7 +69,7 @@ body {
 
 /* 滑鼠懸停時的特效 */
 .link-btn:hover {
-    background-color: #e2e8f0;
+    background-color: #544339;
     transform: translateY(-2px); /* 稍微往上浮動 */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
